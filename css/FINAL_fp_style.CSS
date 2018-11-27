@@ -1,0 +1,385 @@
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+  }
+  
+  /* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+.clear {
+  	clear: both;
+  }
+  
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  }
+  
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  }
+  
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html, body {/* Keeping footer on bottom – ensure you use this: html, body*/
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #4d494a;
+	background-color: #e5e3e3;
+    cursor: pointer;
+    width: 100%; /* Keeping footer on bottom css*/
+    height: 100%; /* Keeping footer on bottom css*/
+  }
+
+  /* Customising the scrollbar */
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #fff;
+}
+
+body::-webkit-scrollbar-track {
+	border: 1px solid #4d494a	
+}
+
+ /*Handle */
+body::-webkit-scrollbar-thumb {
+	background: #f830d9;
+	border-radius: 10px;	 
+}
+
+/* Keeping footer on bottom css*/
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+/*End of keeping footer on bottom css*/  
+  
+ /******************************************
+/* LAYOUT
+/*******************************************/ 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+	background-image: linear-gradient(#f830d9, #f830d9);
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+	padding-right: 2rem;
+	border-bottom: 7px double black;
+}
+
+.logo {
+    padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	left: 2rem;
+	top: .25rem;
+}
+
+.spacer {
+    width: 10%;
+}
+
+.nav a {
+    text-decoration: none;
+}
+  
+.nav a:link {
+    color: #000;
+}
+  
+.nav a:visited {
+    color: #000;
+}
+  
+.nav a:hover {
+  color:#fff;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 #000;
+}
+  
+.nav a:active {
+  color: #e5e3e3;
+}
+
+h1 {
+  	font-size: 1.75rem;
+}
+
+footer {
+	background-image: linear-gradient(#f830d9, #db0739);
+	width: 100%;
+	margin-top: 5rem;
+	text-align: center;
+	border-top: 7px double black;
+}
+
+.logo-footer ul li{
+	padding-top: .5rem;
+	display: inline-block;
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+.logo-footer a {
+	padding-right: 2rem;
+}
+
+.intro {
+	width: 50%;
+	margin-top: 2rem;
+	margin-left: 25%;
+}
+
+.intro p {
+	font-size: .9rem;
+  	font-weight: 300;
+	padding-top: 1.5rem;
+	padding-left: 0px;
+	line-height: 1.3rem;
+}
+
+ ul {
+	list-style: disc;
+	font-size: .9rem;
+	font-weight: 300;
+	padding: 1rem 0 .9rem 3rem;
+}
+
+.hold-all {
+	margin-top: 1rem;
+    margin-left: 25%;
+    max-width: 50%;
+    background-color: rgb(229, 227, 227); 
+}
+
+.accord-main {
+    width: 100%;
+	padding: 1.25rem .5rem 1rem 1.5rem;
+	background-color: #fff;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	color: #4d494a;
+	border: 1px solid #4d494a;
+	margin-top: 0px;
+	text-decoration: none;
+	margin-top: 1px;
+}
+
+.accord-nest {
+	width: 100%;
+	padding-top: .9rem;
+	padding-bottom: .75rem;
+	background-image: linear-gradient(#fdf8f8, #e5e3e3);
+	font-family: 'Montserrat', sans-serif;
+	font-size: .9rem;
+	text-align: center;
+	border-right: 1px solid #a1208d;
+	border-bottom: 0;
+	border-left: 1px solid #a1208d;
+	border-top: none;
+	color: #4d494a;
+	cursor: pointer;	
+}
+
+button:focus {
+	outline: 0;
+}
+
+.accord-main:after {
+    content: '\025BE';
+	float: right;
+	padding-right: 1rem;
+	margin-left: 1rem;
+	font-size: 1.5rem;	
+}
+
+.accord-nest:after {
+    content: '\025BE';
+    color:#4d494a;
+	float: right;
+	font-size: 1rem;	
+}
+
+.active:after {
+   	content: "\025B4";
+}
+
+.panel-main {
+	display: none;
+	overflow: auto;
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 2rem;
+	color: #000;
+    border-left: 1px solid #4d494a;
+	border-right: 1px solid #4d494a;
+	border-bottom: 1px solid #4d494a;
+}
+
+.panel-main p {
+	padding-bottom: .5rem;
+	padding-top: .75rem;
+}
+
+.panel-left { 
+	width: 100%;
+	padding: 1.75rem 2rem 0 2rem;
+	font-size: .9rem;
+	font-weight: 300;
+	line-height: 1.5rem;	
+}
+
+.container-accord-nest {
+	width: 94%;
+	margin: 0 auto;	
+}
+
+.panel-right {
+	overflow: hidden;
+	width: 100%;
+	padding: 0 5%;
+	font-size: .9rem;
+	font-weight: 300;
+	line-height: 1.5rem;
+	background-color:#fdf8f8;
+	border-right: 1px solid #a1208d;
+	border-bottom: 1px solid #a1208d;
+	border-left: 1px solid #a1208d;
+	max-height: 0;
+	transition: max-height 0.8s ease-out;
+}
+
+.btnr-top {
+	border-top: 1px solid #a1208d;
+	margin-top: 2.75rem;	
+}
+
+span {
+	font-weight: 500;
+}
+
+.yes {
+	color: green;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.no {
+	color: red;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+/****************************ABOVE 950*************************************************************/
+
+@media (min-width: 950px) {
+	.panel-left { 
+		float:left;
+		width: 45%;
+		padding: 1.75rem 2rem 0 2rem;
+		font-size: .9rem;
+		font-weight: 300;
+		line-height: 1.5rem;
+	}
+
+	.container-accord-nest {
+		float: right;
+		width: 52%;
+		margin-right: 3%;	
+	}
+	
+	.spacer {
+		width: 40%;
+	}
+}
+/************************************BELOW 768***********************************************/
+
+@media (max-width: 768px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		font-size: .9rem;
+		padding-top: 3rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.logo {
+		position: absolute;
+		padding-left: .75rem;
+	}
+}
+/****************************BELOW 480*************************************************************/
+
+@media (max-width: 480px) {
+	.hold-all {
+		max-width: 70%;
+		margin-left: 15%;
+	}
+
+	ul {
+		padding-left: 1rem;
+		font-size: .75rem;
+		line-height: 1rem;
+	}
+
+	.panel-right {
+		font-size: .75rem;
+		line-height: 1rem;
+	}
+
+	.panel-left {
+		font-size: .75rem;
+		line-height: 1rem;
+		padding-top: 1rem;
+	}
+
+	.intro p {
+		font-size: .75rem;
+		line-height: 1rem;
+	}
+
+	.btnr-top {
+		margin-top: 1.5rem;	
+	}
+}
+/**********************************BELOW 360************************************************/
+@media (max-width: 360px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		font-size: .75rem;
+		padding-top: .25rem;
+		height: 140px;
+	}
+}

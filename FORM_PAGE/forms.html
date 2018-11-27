@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>GA FEWD36 – Final Project – FORM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="parsley.css">
+    <link rel="stylesheet" href="../TEAM_PAGE/css/reset.css">
+    <link rel="stylesheet" href="../TEAM_PAGE/css/team_style.css">
+</head>
+
+<body>
+    <article><!--Keeping footer on bottom-->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://www.service.nsw.gov.au"><img src="../TEAM_PAGE/images/NSSW_logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </li>
+                    <li><a href="../FINAL_fp_index.html">Back home</a></li>
+                    <li><a href="../TEAM_PAGE/team_index.html">The team</a></li>
+                    <li><a href="../FINALE/fp_thats-it.html">That's it</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main><!--Keeping footer on bottom-->
+        <div class="hold-all">
+            <h1 class="lunch-invite">Join the WB lunch guild</h1>
+            <form data-parsley-validate>
+                
+                <div class="form-group col-md-6">
+                    <label for="name">Your name: *</label>
+                    <input class="form-control" id="name" type="text" autocomplete="off" data-parsley-required>
+                </div>
+                   
+                <div class="form-group col-md-6">
+                    <label for="email">Email: *</label>
+                    <input class="form-control" id="email" type="email" data-parsley-required data-parsley-type="email">
+                </div>
+               
+                <div class="form-group col-md-4">
+                    <label for="phone">Mobile number: *</label>
+                    <input class="form-control" id="phone" type="tel" data-parsley-required data-parsley-type="number">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="password1">Password *</label>
+                    <input type="password" class="password" id="password1" data-parsley-required>
+                </div>
+
+                <p>Favourite cuisines:</p>
+
+                <div class="custom-control custom-checkbox">  
+                    <input class="custom-control-input" type="checkbox"  id="asian">  
+                    <label class="custom-control-label" for="asian">Asian</label>  
+                </div>
+
+                <div class="custom-control custom-checkbox">  
+                    <input class="custom-control-input" type="checkbox"  id="ausint">  
+                    <label class="custom-control-label" for="ausint">Aussie International</label>  
+                </div>
+
+                <div class="custom-control custom-checkbox">  
+                    <input class="custom-control-input" type="checkbox"  id="veg">  
+                    <label class="custom-control-label" for="veg">Vegetarian/Vegan</label>  
+                </div>
+                        
+                <div class="custom-control custom-checkbox">  
+                    <input class="custom-control-input" type="checkbox"  id="african">  
+                    <label class="custom-control-label" for="african">African</label>  
+                </div>
+                            
+                <div class="custom-control custom-checkbox">  
+                    <input class="custom-control-input" type="checkbox"  id="american">  
+                    <label class="custom-control-label" for="american">American</label>  
+                </div>
+
+                <!--<div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="cuisines" id="asian" value="Asian">
+                    <label class="form-check-label" for="asian">Asian</label>                  
+                </div>-->
+
+                <div class="form-group col-md-4">
+                    <label for="drinks">Preferred beverage:</label>
+                    <select class="form-control" id="drinks" data-parsley-required>
+                        <option>Please select</option>
+                        <option>Wine</option>
+                        <option>Beer</option>
+                        <option>Spirits</option>
+                        <option>Soft drink</option>
+                        <option>Water</option>  
+                    </select>
+                </div>
+    
+                <button class="btn btn-light" type="reset">Reset</button>
+                <button class="btn btn-dark" type="submit">Sign up</button>
+            </form>
+        </div><!--Closing the hold-all div-->
+    </main><!--Keeping footer on bottom-->
+    <footer>
+        <div class="logo-footer">
+            <ul>
+                <li><a href="https://www.service.nsw.gov.au"><img src="../TEAM_PAGE/images/nssw_footer.png" alt="snsw logo"></a></li>
+                <li><a href="#"><img src="../TEAM_PAGE/images/facebook.png" alt="Facebook logo"></a></li>
+                <li><a href="#"><img src="../TEAM_PAGE/images/twitter.png" alt="Twitter logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+    </article><!--Keeping footer on bottom-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../TEAM_PAGE/js/team.js"></script>
+
+</body>
+
+</html>

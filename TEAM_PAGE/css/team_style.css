@@ -1,0 +1,408 @@
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+  
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+  
+.clear {
+    clear: both;
+}
+  
+.alignright {
+    float: right;
+    padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+  
+.alignleft {
+    float: left;
+    padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+html, body {/* Keeping footer on bottom – ensure you use this: html, body*/
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0d0e13;
+    width: 100%; /* Keeping footer on bottom css*/
+    height: 100%; /* Keeping footer on bottom css*/
+}
+
+  /* Customising the scrollbar */
+  body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #fff;
+}
+
+body::-webkit-scrollbar-track {
+	border: 1px solid #4d494a	
+}
+
+ /*Handle */
+body::-webkit-scrollbar-thumb {
+	background: #f830d9;
+	border-radius: 10px;	 
+}
+
+/* Keeping footer on bottom css*/
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+/*End of keeping footer on bottom css*/    
+  
+/******************************************
+/* LAYOUT
+/*******************************************/
+  
+/* Center the container*/ 
+.header-container {
+    width: 100%;
+}
+ 
+header {
+    background-image: linear-gradient(#f830d9, #f830d9);
+    overflow: hidden;
+    border-bottom: 7px double black;
+    margin-bottom: 2.5rem;
+}
+
+.logo {
+    padding-top: 1.75rem;
+	padding-left: 2rem;
+	max-width: 100%; 
+	height: auto;
+}
+  
+header nav {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 1.5rem .5rem 2rem;
+    font-size: 1.2rem;
+}
+  
+header nav ul li a {
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+}
+  
+nav a:link {
+    color: #000;
+}
+  
+nav a:visited {
+    color: #000;
+}
+  
+nav a:hover {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 #000;
+  text-decoration: none;
+}
+  
+nav a:active {
+  color: #e5e3e3;
+}
+
+/* EXTRA STYLE – EVKW */
+header nav .line {
+    width: 3rem;
+    height: .3rem;
+    background: #000;
+    border-radius: 1rem;
+    margin-top: .25rem;
+  }
+  
+header nav .line:first-of-type {
+    margin-top: .7rem;
+}
+  
+header nav li:first-child {
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+/* End EVKW */
+
+footer {
+	background-image: linear-gradient(#f830d9, #db0739);
+	width: 100%;
+	margin-top: 5rem;
+	text-align: center;
+	border-top: 7px double black;
+}
+
+.logo-footer ul li {
+	padding-top: .5rem;
+	display: inline-block;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.logo-footer a {
+    padding-right: 2rem;
+}
+
+.hold-all {
+    width: 674px;
+    height: auto;
+    margin: 0px auto 1.5rem;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hold-all ul {
+    padding: 0;
+}
+
+.hold-all li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px; 
+}
+
+.hold-img{
+    width: 250px;
+    height: 100%;
+    margin: 6rem auto;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1c1c22;
+    text-shadow: 1px 1px 0 #f830d9;
+    text-align: center;
+}
+
+#im1 {
+    background: url("../images/eye_grad.jpg") no-repeat top center;
+}
+#im2 {
+    background: url("../images/quilter_grad.jpg") no-repeat top center;
+}
+#im3 {
+    background: url("../images/drupal_grad.jpg") no-repeat top center;
+}
+#im4 {
+    background: url("../images/owl_grad.jpg") no-repeat top center;
+}
+#im5 {
+    background: url("../images/cocktail_grad.jpg") no-repeat top center;
+}
+#im6 {
+    background: url("../images/palette_grad.jpg") no-repeat top center;
+}
+#im7 {
+    background: url("../images/rester_grad.jpg") no-repeat top center;
+}
+#im8 {
+    background: url("../images/gamer_grad.jpg") no-repeat top center;
+}
+#im9 {
+    background: url("../images/masks_grad.jpg") no-repeat top center;
+}
+
+.overlay {
+    width: 201px;
+    height: 292px;
+    font-size: 1.75rem;
+    text-align: center;
+    background: rgba(255,255,255,.9);
+    overflow: hidden;
+    padding: 20px;
+    margin: 0;
+    text-decoration: none;
+    border: 3px #f830d9 double;
+    padding-top: 8rem;
+    cursor: pointer;
+    text-shadow: -1px -1px 0 #f830d9, 1px -1px 0 #f830d9, -1px 1px 0 #f830d9, 1px 1px 0 #f830d9;
+}
+
+.imgs {
+    color: #1c1c22;
+}
+
+.btn-container {
+    margin: 3rem auto;
+    text-align: center;
+    width: 50%;
+}
+
+.button {
+    padding: 25px 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px #fff dotted;
+    background-image: linear-gradient(#f830d9, #f830d9);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    color: #000;
+}
+  
+.button a:link {
+    color: #000;
+}
+  
+.button a:visited {
+    color: #000;
+}
+  
+.button a:hover {
+    color:#fff;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 #000;
+}
+  
+.button a:active {
+    color: #e5e3e3;
+}
+
+.lunch-invite {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 0 #fff;
+    text-align: left;
+}
+
+/* Bootstrap customisation*/
+.btn-light {
+	background-color: #fff;
+    border: 1px dotted #000;
+    margin-left: 1rem;	
+}
+
+.form-check, p {
+     margin: 0 0 1rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #f830d9;
+    outline: 0;
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(248,48,217,.9);
+}
+
+.password:focus {
+    border-color: #f830d9;
+    outline: 0;
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(248,48,217,.9);
+}
+
+.custom-checkbox {
+    margin: 0 0 1rem 1rem;
+}
+
+.custom-control-label:before {
+    background-color: #f830d9;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #1c1c22;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='white' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.15rem rgba(248,48,217,1);
+    border-radius: 50%;
+}
+
+.custom-control-input:active~.custom-control-label::before {
+    background-color: #1c1c22;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.15rem rgba(248,48,217,1); 
+}
+/* End Bootstrap customisation*/
+
+@media (max-width: 900px) {
+    header nav {
+        width: 70%;
+        margin: 0;
+    }
+    
+    header nav ul li {
+        float: none;
+        display: block;
+        font-size: 1rem;
+    }
+    
+    header nav ul li:first-child {
+        display:block;
+        position: absolute;
+        top: .6em;
+        right: .75em;
+    } 
+    
+    header nav ul.slideDown {
+        height: 7rem;
+    }
+    
+    header nav ul {
+        height: 0;
+        transition: height 1s;
+        overflow: hidden;
+    }
+    
+    header nav ul li a {
+        display: block;
+        width: 100%;
+        padding: .5rem 0;
+        border-bottom: 3px dotted black;
+        text-align: center;
+    }
+}
+
+@media (max-width: 674px) {
+    .hold-all {
+        width: 450px;
+    }   
+}
+
+@media (max-width: 450px) {
+    .hold-all {
+        width: 250px;
+    }
+}
