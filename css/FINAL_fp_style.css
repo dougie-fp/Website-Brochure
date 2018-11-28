@@ -56,7 +56,7 @@ body::-webkit-scrollbar-track {
 
  /*Handle */
 body::-webkit-scrollbar-thumb {
-	background: #f830d9;
+	background: #49aae1;
 	border-radius: 10px;	 
 }
 
@@ -84,7 +84,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-	background-image: linear-gradient(#f830d9, #f830d9);
+	background-image: linear-gradient(#49aae1, #a3d4ef);
     width: 100%;
     font-size: 1.2rem;
     color: white;
@@ -133,7 +133,7 @@ h1 {
 }
 
 footer {
-	background-image: linear-gradient(#f830d9, #db0739);
+	background-image: linear-gradient(#a3d4ef, #49aae1);
 	width: 100%;
 	margin-top: 5rem;
 	text-align: center;
@@ -202,9 +202,9 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 	font-size: .9rem;
 	text-align: center;
-	border-right: 1px solid #a1208d;
+	border-right: 1px solid #cd0320;
 	border-bottom: 0;
-	border-left: 1px solid #a1208d;
+	border-left: 1px solid #cd0320;
 	border-top: none;
 	color: #4d494a;
 	cursor: pointer;	
@@ -219,7 +219,8 @@ button:focus {
 	float: right;
 	padding-right: 1rem;
 	margin-left: 1rem;
-	font-size: 1.5rem;	
+	font-size: 1.5rem;
+	color: #cd0320;
 }
 
 .accord-nest:after {
@@ -271,15 +272,15 @@ button:focus {
 	font-weight: 300;
 	line-height: 1.5rem;
 	background-color:#fdf8f8;
-	border-right: 1px solid #a1208d;
-	border-bottom: 1px solid #a1208d;
-	border-left: 1px solid #a1208d;
+	border-right: 1px solid #cd0320;
+	border-bottom: 1px solid #cd0320;
+	border-left: 1px solid #cd0320;
 	max-height: 0;
 	transition: max-height 0.8s ease-out;
 }
 
 .btnr-top {
-	border-top: 1px solid #a1208d;
+	border-top: 1px solid #cd0320;
 	margin-top: 2.75rem;	
 }
 
