@@ -56,7 +56,7 @@ body::-webkit-scrollbar-track {
 
  /*Handle */
 body::-webkit-scrollbar-thumb {
-	background: #f830d9;
+	background: #49aae1;
 	border-radius: 10px;	 
 }
 
@@ -87,7 +87,7 @@ header, main, footer {
 }
  
 header {
-    background-image: linear-gradient(#f830d9, #f830d9);
+    background-image: linear-gradient(#49aae1, #a3d4ef);
     overflow: hidden;
     border-bottom: 7px double black;
     margin-bottom: 2.5rem;
@@ -158,7 +158,7 @@ header nav li:first-child {
 /* End EVKW */
 
 footer {
-	background-image: linear-gradient(#f830d9, #db0739);
+	background-image: linear-gradient(#a3d4ef, #49aae1);
 	width: 100%;
 	margin-top: 5rem;
 	text-align: center;
@@ -206,7 +206,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: 500;
     color: #1c1c22;
-    text-shadow: 1px 1px 0 #f830d9;
+    text-shadow: 1px 1px 0 #a3d4ef;
     text-align: center;
 }
 
@@ -269,7 +269,7 @@ h1 {
     text-align: center;
     border-radius: 50%;
     border: 3px #fff dotted;
-    background-image: linear-gradient(#f830d9, #f830d9);
+    background-image: linear-gradient(#49aae1, #a3d4ef);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -321,13 +321,13 @@ h1 {
 .form-control:focus {
     border-color: #f830d9;
     outline: 0;
-    box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(248,48,217,.9);
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(163,212,239,.9);
 }
 
 .password:focus {
     border-color: #f830d9;
     outline: 0;
-    box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(248,48,217,.9);
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(163,212,239,.9);
 }
 
 .custom-checkbox {
@@ -335,7 +335,7 @@ h1 {
 }
 
 .custom-control-label:before {
-    background-color: #f830d9;
+    background-color: #a3d4ef;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
@@ -344,7 +344,7 @@ h1 {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='white' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
-    box-shadow: 0 0 0 1px #000, 0 0 0 0.15rem rgba(248,48,217,1);
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.15rem rgba(163,212,239,1);
     border-radius: 50%;
 }
 
@@ -353,7 +353,7 @@ h1 {
 }
 
 .custom-checkbox .custom-control-input:focus~.custom-control-label::before {
-    box-shadow: 0 0 0 1px #000, 0 0 0 0.15rem rgba(248,48,217,1); 
+    box-shadow: 0 0 0 1px #000, 0 0 0 0.15rem rgba(163,212,239,1); 
 }
 /* End Bootstrap customisation*/
 
