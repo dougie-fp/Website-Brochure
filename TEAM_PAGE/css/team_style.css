@@ -39,7 +39,7 @@ html, body {/* Keeping footer on bottom – ensure you use this: html, body*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #fff;
-    background-color: #0d0e13;
+    background-color: #1c1c22;
     width: 100%; /* Keeping footer on bottom css*/
     height: 100%; /* Keeping footer on bottom css*/
 }
