@@ -242,14 +242,14 @@ h1 {
     width: 201px;
     height: 292px;
     font-size: 1.75rem;
-    text-align: center;
+    text-align: right;
     background: rgba(255,255,255,.9);
     overflow: hidden;
     padding: 20px;
     margin: 0;
     text-decoration: none;
     border: 3px #1c1c22 double;
-    padding-top: 8rem;
+    padding-top: 14rem;
     cursor: pointer;
     text-shadow: -1px -1px 0 #1c1c22;
 }
