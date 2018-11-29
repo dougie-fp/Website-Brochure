@@ -248,14 +248,14 @@ h1 {
     padding: 20px;
     margin: 0;
     text-decoration: none;
-    border: 3px #f830d9 double;
+    border: 3px #1c1c22 double;
     padding-top: 8rem;
     cursor: pointer;
-    text-shadow: -1px -1px 0 #f830d9, 1px -1px 0 #f830d9, -1px 1px 0 #f830d9, 1px 1px 0 #f830d9;
+    text-shadow: -1px -1px 0 #1c1c22;
 }
 
 .imgs {
-    color: #1c1c22;
+    color: #fff;
 }
 
 .btn-container {
