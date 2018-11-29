@@ -242,8 +242,8 @@ h1 {
     width: 201px;
     height: 292px;
     font-size: 1.75rem;
-    text-align: right;
-    background: rgba(255,255,255,.9);
+    text-align: left;
+    background: rgba(255,255,255,.95);
     overflow: hidden;
     padding: 20px;
     margin: 0;
